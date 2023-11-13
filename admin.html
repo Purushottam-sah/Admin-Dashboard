@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/responsive/responsive.css">
+
+    <!-- Fonticons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Admin Dashboard</title>
+</head>
+
+
+<div class="sidebar">
+    <div class="side-title">
+        AdminHub
+    </div>
+    <ul class="dashboard-component">
+        <li>
+            <a href="admin.html">
+                <i class="bx bx-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <span>Layout & Pages</span>
+        </li>
+        <li class="layout-list">
+            <a href="#"><i class="bx bx-layer"></i><span class="layout-pages">Pages<i class='bx bx-chevron-down'></i>
+                    <ul class="pages-item">
+                        <li class="first-child-profile"><a href="#">Profile</a></li>
+                        <li><a href="#">Setting</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </span></a>
+        </li>
+        <li class="authentication">
+            <a href="#"><i class='bx bx-lock-alt'></i><span>Authentications <i class='bx bx-chevron-down'></i>
+                    <ul class="admin-authenticate">
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Forget Password</a></li>
+                    </ul>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"><i class="bx bx-layout"></i><span>Layouts</span></a>
+        </li>
+        <li>
+            <span>UI Components</span>
+        </li>
+        <li class="components">
+            <a href="#"><i class='bx bx-desktop'></i><span>Components <i class='bx bx-chevron-down'></i>
+                    <ul class="component-list">
+                        <li><a href="#">Alert</a></li>
+                        <li><a href="#">Badge</a></li>
+                        <li><a href="#">Button</a></li>
+                        <li><a href="#">Card</a></li>
+                        <li><a href="#">Carousel</a></li>
+                        <li><a href="#">Dropdown</a></li>
+                        <li><a href="#">Navs</a></li>
+                        <li><a href="#">Navsbar</a></li>
+                    </ul>
+                </span>
+            </a>
+        </li>
+        <li class="level-list">
+            <a href="#"><i class="bx bx-down-arrow-alt"></i><span>Menu Levels <i class='bx bx-chevron-down'></i>
+                    <ul class="level-items">
+                        <li><a href="#">Two Level</a></li>
+                        <li><a href="#">Three Level</a></li>
+                    </ul>
+                </span></a>
+        </li>
+        <li>
+            <span>Doccumentations</span>
+        </li>
+        <li>
+            <a href="#"><i class="bx bx-file"></i><span>Docs</span></a>
+        </li>
+        <li>
+            <a href="#"><i class='bx bxs-key'></i><span>Changelogs</span></a>
+        </li>
+        <li>
+            <a href="#"><i class="bx bx-download"></i><span>Downloads</span></a>
+        </li>
+    </ul>
+</div>
+
+<main>
+    <div class="nav-widget">
+        <div class="nav-content">
+            <div class="nav-bar">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="nav-search">
+                <form action="#">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <i class='bx bx-search-alt-2'></i>
+                </form>
+            </div>
+        </div>
+        <div class="account">
+            <div class="user-notification">
+                <i class='bx bx-bell'></i>
+            </div>
+            <div class="dropdown admin-profile">
+                <img src="img/profile/profile.png" alt="profile">
+                <ul class="dropdown-menu profile-manage ">
+                    <li>Ram Bhadur Sah</li>
+                    <li><a href="#">View My Profile</a></li>
+                    <li><a href="#"><i class='bx bx-user'></i><span>Edit Profile</span></a></li>
+                    <li><a href="#"><i class='bx bx-trending-up'></i><span>Activity Logs</span></a></li>
+                    <li><a href="#"><i class='bx bx-star'></i><span>Go Pro</span></a></li>
+                    <li><a href="#"> <i class='bx bx-cog'></i><span>Account Settings</span></a></li>
+                    <li><a href="#"><i class='bx bx-log-in-circle'></i><span>log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="content">
+        <div class="content-widget">
+            <div class="content-title">
+                <h4>Projects</h4>
+                <button class="btn-newProject">Create New Project</button>
+            </div>
+            <div class="bg-primary1 pt-10 pb-21"></div>
+            <div class="card-content">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h5 class="card-title">Projects</h5>
+                            <i class='bx bx-message-detail'></i>
+                        </div>
+                        <p class="card-text">18</p>
+                        <span>2 Completed</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h5 class="card-title">Active Task</h5>
+                            <i class='bx bx-line-chart'></i>
+                        </div>
+                        <p class="card-text">132</p>
+                        <span>28 Completed</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h5 class="card-title">Teams</h5>
+                            <i class='bx bxl-microsoft-teams'></i>
+                        </div>
+                        <p class="card-text">12</p>
+                        <span>1 Completed</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h5 class="card-title">Productivity</h5>
+                            <i class='bx bx-target-lock'></i>
+                        </div>
+                        <p class="card-text">76%</p>
+                        <span>5% Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projectList">
+        <div class="project-table">
+            <span class="bg-white w-100 active-project"> Active Project</span>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-sm poject-info">
+                <thead>
+                    <tr>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Hours</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Member</th>
+                        <th scope="col">Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <i class='bx bxl-dropbox'></i>
+                                </div>
+                                <div class="project-name">
+                                    <a href="#">
+                                        <h5 class="table-title">Dropbox Design System</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle credit-hours">34</td>
+                        <td class="align-middle">
+                            <span class="bg-warning project-priority">Medium</span>
+                        </td>
+                        <td class="align-middle">
+                            <div class="avtar-group">
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-1.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-2.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-3.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm">+5</span>
+                            </div>
+                        </td>
+                        <td class="project-completed align-middle text-dark">
+                            <div class="float-start me-3">
+                                15%
+                            </div>
+                            <div class="mt-2">
+                                <div style="height:5px" class="progress">
+                                    <div role="progressbar" class="progress-bar" style="width:15%" aria-valuenow="15"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <i class='bx bxl-slack' style='color:#26cc2b'></i>
+                                </div>
+                                <div class="project-name">
+                                    <a href="#">
+                                        <h5 class="table-title">Slack Team UI Design</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle credit-hours">50</td>
+                        <td class="align-middle">
+                            <span class="bg-warning project-priority" style="background: red !important;">High</span>
+                        </td>
+                        <td class="align-middle">
+                            <div class="avtar-group">
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-1.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-2.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-3.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm">+5</span>
+                            </div>
+                        </td>
+                        <td class="project-completed align-middle text-dark">
+                            <div class="float-start me-3">
+                                35%
+                            </div>
+                            <div class="mt-2">
+                                <div style="height:5px" class="progress">
+                                    <div role="progressbar" class="progress-bar" style="width:35%" aria-valuenow="35"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <i class='bx bxl-github' style='color:#141514'></i>
+                                </div>
+                                <div class="project-name">
+                                    <a href="#">
+                                        <h5 class="table-title">GitHub Satellite</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle credit-hours">120</td>
+                        <td class="align-middle">
+                            <span class="bg-warning project-priority" style="background: #188baa !important">Low</span>
+                        </td>
+                        <td class="align-middle">
+                            <div class="avtar-group">
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-1.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-2.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-3.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm">+5</span>
+                            </div>
+                        </td>
+                        <td class="project-completed align-middle text-dark">
+                            <div class="float-start me-3">
+                                75%
+                            </div>
+                            <div class="mt-2">
+                                <div style="height:5px" class="progress">
+                                    <div role="progressbar" class="progress-bar" style="width:75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <i class='bx bx-cube-alt' style='color:#19bdb4'></i>
+                                </div>
+                                <div class="project-name">
+                                    <a href="#">
+                                        <h5 class="table-title">3D Character Modelling</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle credit-hours">60</td>
+                        <td class="align-middle">
+                            <span class="bg-warning project-priority">Medium</span>
+                        </td>
+                        <td class="align-middle">
+                            <div class="avtar-group">
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-1.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-2.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-3.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm">+5</span>
+                            </div>
+                        </td>
+                        <td class="project-completed align-middle text-dark">
+                            <div class="float-start me-3">
+                                65%
+                            </div>
+                            <div class="mt-2">
+                                <div style="height:5px" class="progress">
+                                    <div role="progressbar" class="progress-bar" style="width:65%" aria-valuenow="65"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <i class='bx bxs-layer' style='color:#650ae7'></i>
+                                </div>
+                                <div class="project-name">
+                                    <a href="#">
+                                        <h5 class="table-title">Webapp Design System</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle credit-hours">100</td>
+                        <td class="align-middle">
+                            <span class="bg-warning project-priority"
+                                style="background: #057629 !important;">Track</span>
+                        </td>
+                        <td class="align-middle">
+                            <div class="avtar-group">
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-1.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-2.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-3.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm">+5</span>
+                            </div>
+                        </td>
+                        <td class="project-completed align-middle text-dark">
+                            <div class="float-start me-3">
+                                80%
+                            </div>
+                            <div class="mt-2">
+                                <div style="height:5px" class="progress">
+                                    <div role="progressbar" class="progress-bar" style="width:80%" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <i class='bx bxl-github' style='color:#141514'></i>
+                                </div>
+                                <div class="project-name">
+                                    <a href="#">
+                                        <h5 class="table-title">Github Event Design</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle credit-hours">108</td>
+                        <td class="align-middle">
+                            <span class="bg-warning project-priority" style="background: #188baa !important">Low</span>
+                        </td>
+                        <td class="align-middle">
+                            <div class="avtar-group">
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-1.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-2.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm"><img src="img/avtar/avatar-3.jpg" alt="avtar"></span>
+                                <span class="avtar avtar-sm">+5</span>
+                            </div>
+                        </td>
+                        <td class="project-completed align-middle text-dark">
+                            <div class="float-start me-3">
+                                100%
+                            </div>
+                            <div class="mt-2">
+                                <div style="height:5px" class="progress">
+                                    <div role="progressbar" class="progress-bar" style="width:100%" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="project-status-level">
+        <div class="project-showcase">
+            <span>Views All Project</span>
+        </div>
+    </section>
+    <section id="ProjectView">
+        <div class="mainProject">
+            <div class="project-status">
+                <div class="card" style="width: 28rem;">
+                    <div class="performance-header">
+                        <span>Task Performance</span>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                    </div>
+                    <div class="project-performance-bar">
+                        <svg width="250" height="250">
+                            <circle r="100" cx="125" cy="125" class="track"></circle>
+                            <circle r="100" cx="125" cy="125" class="progress-venture"></circle>
+                        </svg>
+                        <svg width="250" height="250" class="middle-progress">
+                            <circle r="76.2732" cx="148" cy="148" class="track"></circle>
+                            <circle r="76.2732" cx="148" cy="148" class="progress-venture"></circle>
+                        </svg>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-element">
+                            <div class="card-first-child">
+                                <i class='bx bx-check-circle'></i>
+                                <h2>76%</h2>
+                                <span>Completed</span>
+                            </div>
+                            <div class="card-second-child">
+                                <i class='bx bx-trending-up'></i>
+                                <h2>32%</h2>
+                                <span>In-Progress</span>
+                            </div>
+                            <div class="card-third-child">
+                                <i class='bx bx-trending-down'></i>
+                                <h2>13%</h2>
+                                <span>Behind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectTeamTable">
+
+            </div>
+        </div>
+        <div class="table-responsive">
+            <div class="team-info-title">
+                <span>Teams</span>
+            </div>
+            <table class="table table-sm poject-info">
+                <thead>
+                    <tr>
+                        <th scope="col">Teams</th>
+                        <th scope="col">Roles</th>
+                        <th scope="col">Last Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="teams-profile-info">
+                            <div class="team-name">
+                                <div class="team-img w-100">
+                                    <img src="img/avtar/avatar-1.jpg" alt="teams">
+                                </div>
+                                <div class="teams-info">
+                                    <span>Rahul Pariyar</span>
+                                    <span>rahul@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="roles">
+                            <span>Front-End Developer</span>
+                        </td>
+                        <td class="lastactivity-info">
+                            <span>30 Aug, 2023</span>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="teams-profile-info">
+                            <div class="team-name">
+                                <div class="team-img w-100">
+                                    <img src="img/avtar/avatar-2.jpg" alt="teams">
+                                </div>
+                                <div class="teams-info">
+                                    <span>Anita Yadav</span>
+                                    <span>anita23@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="roles">
+                            <span>Project Director</span>
+                        </td>
+                        <td class="lastactivity-info">
+                            <span>Today</span>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="teams-profile-info">
+                            <div class="team-name">
+                                <div class="team-img w-100">
+                                    <img src="img/avtar/avatar-3.jpg" alt="teams">
+                                </div>
+                                <div class="teams-info">
+                                    <span>Jitu Chauhan</span>
+                                    <span>jituchauhan56@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="roles">
+                            <span>Full- Stack Developer</span>
+                        </td>
+                        <td class="lastactivity-info">
+                            <span>Yesterday</span>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="teams-profile-info">
+                            <div class="team-name">
+                                <div class="team-img w-100">
+                                    <img src="img/avtar/avatar-4.jpg" alt="teams">
+                                </div>
+                                <div class="teams-info">
+                                    <span>Amanda Darnell</span>
+                                    <span>amandadarnell@example.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="roles">
+                            <span>Account Manager</span>
+                        </td>
+                        <td class="lastactivity-info">
+                            <span>20 Sep, 2023</span>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="teams-profile-info">
+                            <div class="team-name">
+                                <div class="team-img w-100">
+                                    <img src="img/avtar/avatar-5.jpg" alt="teams">
+                                </div>
+                                <div class="teams-info">
+                                    <span>Patricia Sah </span>
+                                    <span>patriciasah@example.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="roles">
+                            <span>Digital Marketer</span>
+                        </td>
+                        <td class="lastactivity-info">
+                            <span>3 May, 2023</span>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="teams-profile-info">
+                            <div class="team-name">
+                                <div class="team-img w-100">
+                                    <img src="img/avtar/avatar-6.jpg" alt="teams">
+                                </div>
+                                <div class="teams-info">
+                                    <span>Darshini Nair </span>
+                                    <span>darshininair@example.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="roles">
+                            <span>Front-End Developer</span>
+                        </td>
+                        <td class="lastactivity-info">
+                            <span>12 Oct, 2023</span>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="designer">
+            <span>Made By <a href="#">Purushottam Sah</a></span>
+        </div>
+        <div class="distributed">
+            <span>Distributed by: <a href="#">PurushottamSah</a></span>
+        </div>
+    </footer>
+</main>
+
+
+
+
+<!-- Bootstrap JS -->
+
+<script src="js/main.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>
